@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andrew Talley — Senior Software Engineer</title>
+<title>Andrew Talley - Senior Software Engineer</title>
 <meta name="description" content="Andrew Talley, Senior Software Engineer. Cloud-native data systems, legacy modernization, and internal tooling for healthcare.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,7 +161,7 @@
   .hero .lede{ color: var(--slate); font-size: 16.5px; max-width: 580px; margin-bottom: 30px; }
   .hero-ctas{ display:flex; gap:14px; flex-wrap: wrap; }
 
-  /* hero pipeline animation — the signature element */
+  /* hero pipeline animation - the signature element */
   .pipeline{ margin-top: 56px; position: relative; z-index:1; }
   .pipeline-label{ font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); margin-bottom: 16px; display:flex; align-items:center; gap:10px; }
   .pipeline-label .live{ width:7px; height:7px; border-radius:50%; background: var(--signal); position:relative; }
@@ -346,14 +346,14 @@
         </div>
       </div>
 
-      <h1 class="reveal" data-delay="1">I build the systems<br>that move <span class="accent">healthcare data.</span></h1>
+      <h1 class="reveal" data-delay="1">I build systems<br>that move <span class="accent">healthcare data.</span></h1>
       <p class="tagline reveal" data-delay="2">Seven years turning legacy systems and messy data into platforms teams can actually rely on.</p>
       <p class="lede reveal" data-delay="2">At Centene I own an integration pipeline shipping 60–80 files a day across 20–30 markets, led a full .NET-to-Kubernetes modernization, and build the internal tools that take manual work off other people's plates.</p>
       <div class="hero-ctas reveal" data-delay="3">
         <a class="btn btn-primary" href="#work">See the work
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"></path></svg>
         </a>
-        <a class="btn btn-ghost" href="Andrew_Talley_Resume.pdf" download>Download résumé
+        <a class="btn btn-ghost" href="Andrew_Talley_Resume.pdf" download>Download Resumé
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path></svg>
         </a>
         <a class="btn btn-ghost" href="https://github.com/AndrewTalley" target="_blank" rel="noopener">GitHub</a>
@@ -379,7 +379,7 @@
         <div class="case-meta">
           <div>
             <h3>Modernizing and operating EVV</h3>
-            <div class="meta-sub">Centene Corporation — Senior Software Engineer · 2019–Present</div>
+            <div class="meta-sub">Centene Corporation - Senior Software Engineer · 2019–Present</div>
           </div>
           <span class="case-badge">5 microservices in prod</span>
         </div>
@@ -401,7 +401,7 @@
           </div>
         </div>
         <div class="tab-panel" role="tabpanel" aria-labelledby="tab-2" id="panel-2">
-          <p>I designed and own the team's ETL pipeline — a chain of services that turns market config in MongoDB into 60–80 delivered files a day. The scheduler (cron) reads config from Mongo and kicks off datagenerator, which pulls the per-market queries and runs them; dataformatter renders the raw results as CSV, XML, or DSV; and the Java filegenerator writes each file and ships it over SFTP. evv-dbutil wraps all the Mongo access.</p>
+          <p>I designed and own the team's ETL pipeline - a chain of services that turns market config in MongoDB into 60–80 delivered files a day. The scheduler (cron) reads config from Mongo and kicks off datagenerator, which pulls the per-market queries and runs them; dataformatter renders the raw results as CSV, XML, or DSV; and the Java filegenerator writes each file and ships it over SFTP. evv-dbutil wraps all the Mongo access.</p>
           <div class="arch">
             <svg class="arch-svg" viewBox="0 0 760 244" preserveAspectRatio="xMidYMid meet" role="img" aria-label="ETL pipeline: evv-scheduler to evv-datagenerator to evv-dataformatter to evv-filegenerator, with MongoDB accessed through evv-dbutil">
               <defs>
@@ -474,22 +474,22 @@
       <div class="section-head reveal">
         <div class="eyebrow">Side projects</div>
         <h2>Building outside of work</h2>
-        <p>Things I've shipped on my own time, end to end — product decisions included.</p>
+        <p>Things I've shipped on my own time.</p>
       </div>
 
       <div class="feature-card reveal">
         <div class="feature-kicker">Flagship project · full-stack esports platform</div>
         <div class="feature-head">
-          <h3>PCC — Prime Championship Circuit</h3>
+          <h3>PCC - Prime Championship Circuit</h3>
         </div>
-        <p>A competitive-league platform for the MOBA <em>Predecessor</em> — months of work spanning a React/TypeScript front end and a Go (Gin + GORM) REST + WebSocket API. It pulled match and rank data from the Omeda City API and wrapped it in the tooling a competitive scene actually needs: profiles, teams, scheduling, tournaments, and a server-authoritative real-time draft room.</p>
+        <p>A competitive-league platform for the MOBA <em>Predecessor</em> - months of work spanning a React/TypeScript front end and a Go (Gin + GORM) REST + WebSocket API. It pulled match and rank data from the Omeda City API and wrapped it in the tooling a competitive scene actually needs: profiles, teams, scheduling, tournaments, and a server-authoritative real-time draft room.</p>
         <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Server-authoritative draft room</b> — WebSocket ban/pick with captain validation, server-run timers, per-team time banks, bonus time, and side selection.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Swiss-system tournaments</b> — automated pairings with rematch avoidance and byes, live brackets, and admin-gated creation.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Automated stat sync</b> — player and team profiles backed by a worker that polled the Omeda City API every few minutes.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Steam + email auth</b> — Steam OpenID and email/password login with confirmation, JWT access/refresh, and role-gated admin routes.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Moderated uploads</b> — team logos stored in S3 and auto-screened for explicit content with AWS Rekognition.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Live social layer</b> — WebSocket notifications, a social feed, news and patch notes, plus a companion Discord bot.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Server-authoritative draft room</b> - WebSocket ban/pick with captain validation, server-run timers, per-team time banks, bonus time, and side selection.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Swiss-system tournaments</b> - automated pairings with rematch avoidance and byes, live brackets, and admin-gated creation.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Automated stat sync</b> - player and team profiles backed by a worker that polled the Omeda City API every few minutes.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Steam + email auth</b> - Steam OpenID and email/password login with confirmation, JWT access/refresh, and role-gated admin routes.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Moderated uploads</b> - team logos stored in S3 and auto-screened for explicit content with AWS Rekognition.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Live social layer</b> - WebSocket notifications, a social feed, news and patch notes, plus a companion Discord bot.</span></li>
         </ul>
         <div class="tag-row" style="margin-bottom:22px">
           <span class="tag">React 18</span><span class="tag">TypeScript</span><span class="tag">React Query</span><span class="tag">Zustand</span><span class="tag">WebSockets</span><span class="tag">Go</span><span class="tag">Gin</span><span class="tag">GORM</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">AWS S3</span><span class="tag">Rekognition</span><span class="tag">Discord</span><span class="tag">JWT</span>
@@ -504,14 +504,14 @@
         <div class="feature-head">
           <h3>Ortus.gg</h3>
         </div>
-        <p>The spiritual successor to PCC — a <em>Predecessor</em> companion and analytics site rebuilt on the game's new GraphQL API (the one that replaced Omeda City). It's a single self-contained Go binary: Gin and <span style="font-family:var(--mono);font-size:0.92em">templ</span> render the UI server-side, a WebSocket engine drives a real-time draft tool, and a build analyzer turns raw match data into hero insights.</p>
+        <p>The spiritual successor to PCC - a <em>Predecessor</em> companion and analytics site rebuilt on the game's new GraphQL API (the one that replaced Omeda City). It's a single self-contained Go binary: Gin and <span style="font-family:var(--mono);font-size:0.92em">templ</span> render the UI server-side, a WebSocket engine drives a real-time draft tool, and a build analyzer turns raw match data into hero insights.</p>
         <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Real-time draft tool</b> — WebSocket drafts with multiple modes, server-run timers, spectator links, plus draft history, export, and per-draft stats.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Build analyzer</b> — turns raw match data into hero build insights and matchup analysis.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Hero database</b> — searchable heroes with detail pages for abilities and perks, rendered server-side with templ.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Tier list</b> — ranked heroes computed from match data.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>GraphQL data layer</b> — typed queries against the Predecessor GraphQL API.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Installable PWA</b> — service worker and manifest, mobile-tuned, with static assets embedded into the Go binary and deployed on Railway.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Real-time draft tool</b> - WebSocket drafts with multiple modes, server-run timers, spectator links, plus draft history, export, and per-draft stats.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Build analyzer</b> - turns raw match data into hero build insights and matchup analysis.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Hero database</b> - searchable heroes with detail pages for abilities and perks, rendered server-side with templ.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Tier list</b> - ranked heroes computed from match data.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>GraphQL data layer</b> - typed queries against the Predecessor GraphQL API.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"></path></svg><span><b>Installable PWA</b> - service worker and manifest, mobile-tuned, with static assets embedded into the Go binary and deployed on Railway.</span></li>
         </ul>
         <div class="tag-row">
           <span class="tag">Go</span><span class="tag">Gin</span><span class="tag">templ</span><span class="tag">GraphQL</span><span class="tag">WebSockets</span><span class="tag">PWA</span><span class="tag">Service Worker</span><span class="tag">Railway</span>
@@ -521,8 +521,8 @@
       <div class="project-grid">
         <div class="project-card reveal">
           <div class="project-kicker">Full-stack web app</div>
-          <h3>Lulla — Sleep Schedule</h3>
-          <p>An app for building personalized baby sleep schedules. React 18, TypeScript, Vite, and Tailwind on the front end, backed by a TypeScript service layer — with email-verified auth, PDF export, a free / basic / premium subscription tier, and an analytics dashboard built with Chart.js.</p>
+          <h3>Lulla - Sleep Schedule</h3>
+          <p>An app for building personalized baby sleep schedules. React 18, TypeScript, Vite, and Tailwind on the front end, backed by a TypeScript service layer - with email-verified auth, PDF export, a free / basic / premium subscription tier, and an analytics dashboard built with Chart.js.</p>
           <div class="tag-row">
             <span class="tag">React 18</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Tailwind</span><span class="tag">Chart.js</span>
           </div>
@@ -545,7 +545,7 @@
       </div>
 
       <div class="more-projects reveal">
-        <span class="label">Also on GitHub — a Node.js e-commerce REST API, a Go Pokédex CLI, and several React apps.</span>
+        <span class="label">Also on GitHub - a Node.js e-commerce REST API, a Go Pokédex CLI, and several React apps.</span>
         <a class="btn btn-ghost" href="https://github.com/AndrewTalley" target="_blank" rel="noopener">View GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"></path></svg>
         </a>
@@ -559,7 +559,7 @@
       <div class="section-head reveal">
         <div class="eyebrow">Toolbox</div>
         <h2>What I build with</h2>
-        <p>Polyglot by necessity — healthcare systems rarely give you a clean, single-stack environment.</p>
+        <p>Polyglot Engineer - healthcare systems rarely give you a clean, single-stack environment.</p>
       </div>
 
       <div class="core-stack reveal">
@@ -611,32 +611,32 @@
       <div class="section-head reveal">
         <div class="eyebrow">Career</div>
         <h2>Experience</h2>
-        <p>Three promotions on one team, plus the roles that got me there.</p>
+        <p>Three promotions on one team, plus the roles that came along the journey.</p>
       </div>
 
       <div class="timeline reveal">
         <div class="tl-item current">
-          <div class="tl-head"><h3>Senior Software Engineer</h3><span class="tl-date">2023 — Present</span></div>
+          <div class="tl-head"><h3>Senior Software Engineer</h3><span class="tl-date">2023 - Present</span></div>
           <div class="tl-org">Centene Corporation, Clayton, MO</div>
           <p>Lead architecture and own delivery for the EVV platform (see case study above). Mentor junior developers and set technical direction for the team.</p>
         </div>
         <div class="tl-item">
-          <div class="tl-head"><h3>Software Engineer</h3><span class="tl-date">2021 — 2023</span></div>
+          <div class="tl-head"><h3>Software Engineer</h3><span class="tl-date">2021 - 2023</span></div>
           <div class="tl-org">Centene Corporation, Clayton, MO</div>
           <p>Promoted after leading the .NET 4.5 → 8.0 modernization and standing up the team's data-integration pipeline and Snowflake migration.</p>
         </div>
         <div class="tl-item">
-          <div class="tl-head"><h3>Junior Software Engineer</h3><span class="tl-date">2019 — 2021</span></div>
+          <div class="tl-head"><h3>Junior Software Engineer</h3><span class="tl-date">2019 - 2021</span></div>
           <div class="tl-org">Centene Corporation, Clayton, MO</div>
           <p>Joined the EVV team and ramped up across Node.js, Java, and MongoDB while shipping production features.</p>
         </div>
         <div class="tl-item">
-          <div class="tl-head"><h3>Software Engineer</h3><span class="tl-date">Jun 2018 — 2019</span></div>
+          <div class="tl-head"><h3>Software Engineer</h3><span class="tl-date">Jun 2018 - 2019</span></div>
           <div class="tl-org">Aclara Technologies, St. Louis, MO</div>
           <p>Supported Advanced Metering Infrastructure solutions for rural electric cooperatives nationwide. Sole engineer owning the Synergize RF product line end to end; also maintained TWACS and wrote dynamic SQL to support daily operations.</p>
         </div>
         <div class="tl-item">
-          <div class="tl-head"><h3>Business Analyst — IT Product &amp; Health Care Services</h3><span class="tl-date">2017 — 2018</span></div>
+          <div class="tl-head"><h3>Business Analyst - IT Product &amp; Health Care Services</h3><span class="tl-date">2017 - 2018</span></div>
           <div class="tl-org">Centene Corporation, Clayton, MO</div>
           <p>Analyzed and supported initiatives including Electronic Visit Verification and HD Voice, and presented EVV work at the NASUAD conference.</p>
         </div>
@@ -644,7 +644,7 @@
         <div class="edu-card">
           <div>
             <h3>B.S. Computer Management &amp; Information Systems</h3>
-            <p>Southern Illinois University Edwardsville — specializations in IT and Business</p>
+            <p>Southern Illinois University Edwardsville - specializations in IT and Business</p>
           </div>
           <span class="tl-date">May 2018</span>
         </div>
@@ -657,15 +657,15 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div class="eyebrow" style="justify-content:center">Get in touch</div>
-        <h2>Let's build something solid.</h2>
-        <p>Open to senior full-stack and backend roles — especially where there's legacy to modernize or messy data to wrangle.</p>
+        <h2>Let's build something together.</h2>
+        <p>Open to senior full-stack and backend roles.</p>
       </div>
       <div class="contact-actions reveal" data-delay="1">
         <button class="btn btn-primary" id="copyEmail">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16v12H4zM4 7l8 6 8-6"></path></svg>
           andrewtalley1995@gmail.com
         </button>
-        <a class="btn btn-ghost" href="Andrew_Talley_Resume.pdf" download>Résumé</a>
+        <a class="btn btn-ghost" href="Andrew_Talley_Resume.pdf" download>Resumé</a>
         <a class="btn btn-ghost" href="https://github.com/AndrewTalley" target="_blank" rel="noopener">GitHub</a>
       </div>
       <span class="copy-feedback" id="copyFeedback"></span>
@@ -763,8 +763,8 @@
     var email = 'andrewtalley1995@gmail.com';
     function showFeedback(msg){ copyFeedback.textContent = msg; setTimeout(function(){ copyFeedback.textContent = ''; }, 2200); }
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(email).then(function(){ showFeedback('✓ Copied to clipboard'); }).catch(function(){ showFeedback('Copy failed — email shown above'); });
-    } else { showFeedback('Copy failed — email shown above'); }
+      navigator.clipboard.writeText(email).then(function(){ showFeedback('✓ Copied to clipboard'); }).catch(function(){ showFeedback('Copy failed - email shown above'); });
+    } else { showFeedback('Copy failed - email shown above'); }
   });
 
   // ---------- hero pipeline animation (signature element) ----------
